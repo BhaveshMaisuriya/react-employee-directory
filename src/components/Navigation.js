@@ -1,6 +1,6 @@
 import React from "react";
 
-function Navigation({ onSearch, searchTerm, handleSortByName, handleSortByDept }) { // The two props coming down from the Navigation Component
+function Navigation({ onSearch, searchTerm, handleSortByName }) { // The two props coming down from the Navigation Component
     return (
         <div className="md:flex justify-between my-6">
             <div className="md:mb-0 mb-4">
