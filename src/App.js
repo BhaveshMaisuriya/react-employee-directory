@@ -13,11 +13,11 @@ function App() {
       <Router>
         <Layout>
           <Switch>
-            <Route path="/">
-              <Home />
-            </Route>
             <Route path="/overview/:name">
               <SubEmployee />
+            </Route>
+            <Route path="/">
+              <Home />
             </Route>
           </Switch>
           <Footer />
