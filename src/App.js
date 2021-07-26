@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Layout>
           <Switch>
-            <Route path="/overview/:name">
+            <Route path="/overview(/:name)">
               <SubEmployee />
             </Route>
             <Route path="/">
