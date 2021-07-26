@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect, useState } from "react";
-import EmployeeCard from "./EmployeeCard";
 import { useLocation } from 'react-router-dom';
 import { baseUrl } from "../config";
 import axios from "axios";
