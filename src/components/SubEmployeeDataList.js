@@ -3,13 +3,17 @@ import React, { Fragment, useEffect, useState } from "react";
 function SubEmployeeDataList({ subordinates, currentUser }) {
   const [employees, setEmployees] = useState([]);
 
+  const fetchData = (subordinates) => {
+    let data = [...employees];
+    data.push(subordinates);
+    setEmployees(data);
+  }
+
   useEffect(() => {
-    if (subordinates) {
-      let data = [...employees];
-      data.push(subordinates);
-      setEmployees(data);
-    }
+    fetchData(subordinates);
+    // eslint-disable-next-line
   }, [subordinates]);
+
 
   return (
     <Fragment>
