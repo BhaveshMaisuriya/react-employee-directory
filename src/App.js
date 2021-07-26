@@ -13,10 +13,7 @@ function App() {
       <Router>
         <Layout>
           <Switch>
-            <Route exact path="/">
-              <Redirect to="/react-employee-directory" />
-            </Route>
-            <Route path="/react-employee-directory">
+            <Route path="/">
               <Home />
             </Route>
             <Route path="/overview/:name">
