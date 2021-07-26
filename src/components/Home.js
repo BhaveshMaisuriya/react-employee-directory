@@ -9,8 +9,8 @@ function Home() {
   const [sorted, setSorted] = useState(false);
   const [data, setEmployees] = useState([]);
 
-  useEffect(async () => {
-    await getEmployeeList();
+  useEffect(() => {
+    getEmployeeList();
   }, []);
 
   const getEmployeeList = () => {
@@ -22,7 +22,7 @@ function Home() {
       .catch(function (error) {
         console.log(error);
       })
-      .then(function () {});
+      .then(function () { });
   };
 
   function handleSearchTerm(event) {
@@ -39,7 +39,7 @@ function Home() {
       setSorted(false);
     }
   }
-  
+
   const filteredEmployees = data.filter((employee) =>
     employee.toLowerCase().startsWith(searchTerm.toLowerCase())
   );

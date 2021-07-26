@@ -16,7 +16,7 @@ function SubEmployee(props) {
     getApiCalls(currentPath.split('/')[2] && currentPath.split('/')[2]);  
   }, []);
 
-  const getApiCalls = async(name) => {
+  const getApiCalls = (name) => {
     let data = [...showEmployee];
     axios
     .get(`${baseUrl}/${name}`)
@@ -32,7 +32,7 @@ function SubEmployee(props) {
       console.log(error);
     })
     .then(function () {});
-    await setShowEmployee(data);
+     setShowEmployee(data);
   }
 
   return (
