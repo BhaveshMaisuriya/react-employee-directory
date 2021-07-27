@@ -1,6 +1,0 @@
-[[redirects]]
-  from = "/"
-  to = "/overview/:name"
-  status = 200
-  force = true
-  conditions = {Language = ["en","es"], Country = ["US"]}
